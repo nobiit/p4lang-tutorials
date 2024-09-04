@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provider "virtualbox" do |vb|
-    vb.gui = true
+    vb.gui = false
     # Larger memory and vcpus helps build p4c from source
     # significantly faster.  Reduce this using VirtualBox settings
     # before creating VM image if desired.
